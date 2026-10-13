@@ -2142,61 +2142,78 @@ scroll-snap-align: start;
 let productos = [];
 
 async function cargarProductosDesdeCSV() {
+
   const response = await fetch("data/CatalogoWeb_FER.csv");
   const data = await response.text();
 
   const resultado = Papa.parse(data, {
     header: true,
-    skipEmptyLines: true
+    skipEmptyLines: true,
+    delimiter: ""
   });
 
- productos = resultado.data
-  .map(fila => {
+  console.log("COLUMNAS DEL CSV:", resultado.meta.fields);
+  console.log("FILAS DEL CSV:", resultado.data);
 
-    const opciones = [];
+  productos = resultado.data
+    .map(fila => {
 
-   for (let i = 1; i <= 50; i++) {
+      const opcion = fila.opcion_1?.trim();
+      const precio = fila.precio_1?.trim();
 
-  const opcion = fila["opcion_" + i];
-const precio = fila["precio_" + i];
-const imagen = fila["imagen_" + i];
+      if (!fila.id || !fila.nombre || !fila.categoria || !opcion) {
+        return null;
+      }
 
-  if (!opcion) break;
+      return {
 
-opciones.push({
-  peso: opcion.trim(),
-  precio: Number(precio),
-  imagen: imagen ? "imagenes/" + imagen.trim() : null
-});
- 
+        id: fila.id.trim(),
 
-}
-    
+        nombre: fila.nombre.trim(),
 
-    // 👇 PROTECCIÓN
-    if (opciones.length === 0) return null;
+        categoria: fila.categoria
+          .trim()
+          .toLowerCase(),
 
-    return {
-      id: fila.id?.trim(),
-      nombre: fila.nombre?.trim(),
-      categoria: fila.categoria?.trim().toLowerCase(),
-      subcategoria: fila.subcategoria?.trim().toLowerCase(),
-      descripcion: fila.descripcion_corta?.trim(),
-      descripcionLarga: fila.descripcion_larga?.trim(),
-      imagen: "imagenes/" + fila.imagen?.trim(),
-      opciones: opciones
-    };
+        subcategoria: fila.subcategoria
+          ? fila.subcategoria.trim().toLowerCase()
+          : "",
 
-  })
-  .filter(p => p !== null);
-	
+        descripcion: fila.descripcion_corta
+          ? fila.descripcion_corta.trim()
+          : "",
 
-  console.log("Productos cargados correctamente:", productos);
+        descripcionLarga: fila.descripcion_larga
+          ? fila.descripcion_larga.trim()
+          : "",
+
+        imagen: fila.imagen
+          ? "imagenes/" + fila.imagen.trim()
+          : "",
+
+        opciones: [
+          {
+            peso: opcion,
+            precio: Number(precio)
+          }
+        ]
+
+      };
+
+    })
+    .filter(p => p !== null);
+
+  console.log("PRODUCTOS FINALES:", productos);
+  console.log("CANTIDAD DE PRODUCTOS:", productos.length);
 
   renderProductos();
+
   actualizarMenuCategorias();
-	construirSubmenus();
-	actualizarContadoresCategorias();
+
+  construirSubmenus();
+
+  actualizarContadoresCategorias();
+
 }
 
  
