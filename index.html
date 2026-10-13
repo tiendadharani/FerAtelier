@@ -3030,9 +3030,20 @@ btnMenos.addEventListener("click", () => {
 
 function abrirCarritoCompleto() {
 
-  document.querySelector(".carrito-panel").classList.remove("abierto");
+  const panel = document.querySelector(".carrito-panel");
+
+  if (panel) {
+    panel.classList.remove("abierto");
+  }
 
   const contenedor = document.getElementById("carrito-completo-contenido");
+
+  if (!contenedor) {
+    console.error("No se encontró el carrito completo");
+    return;
+  }
+
+  contenedor.innerHTML = "";
   contenedor.innerHTML = "";
 
   if (carrito.length === 0) {
