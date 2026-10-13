@@ -1943,66 +1943,16 @@ scroll-snap-align: start;
 
 <div class="categorias-destacadas">
 
-<button class="categoria-flecha flecha-izq" onclick="scrollCategorias(-300)">‹</button>
+  <button class="categoria-flecha flecha-izq"
+          onclick="scrollCategorias(-300)">‹</button>
 
-<div class="categorias-scroll" id="categorias-scroll">
-
-  <div class="categoria-card" onclick="mostrarSubcategoria('almacen','frutos secos')">
-  <img src="img/categorias/frutos secos.png">
-  <h3>Frutos secos</h3>
-</div>
-
-<div class="categoria-card" onclick="mostrarSubcategoria('almacen','harinas')">
-  <img src="img/categorias/harinas.png">
-  <h3>Harinas</h3>
-</div>
-
-<div class="categoria-card" onclick="mostrarSubcategoria('almacen','desayuno y snacks')">
-  <img src="img/categorias/desayuno.png">
-  <h3>Desayuno y Snacks</h3>
-</div>
-
-<div class="categoria-card" onclick="mostrarSubcategoria('terapias','brumas')">
-  <img src="img/categorias/bruma.png">
-  <h3>Brumas</h3>
-</div>
-
-<div class="categoria-card" onclick="mostrarSubcategoria('terapias','aceites esenciales')">
-  <img src="img/categorias/aromaterapia.png">
-  <h3>Aceites esenciales</h3>
-</div>
-
-  <div class="categoria-card" onclick="irASeccion('aromas')">
-    <img src="img/categorias/aromas.png">
-    <h3>Aromas & Ritual</h3>
-    <p id="count-aromas"></p>
+  <div class="categorias-scroll" id="categorias-scroll">
+    <!-- Las categorías se generarán automáticamente desde el CSV -->
   </div>
 
-  <div class="categoria-card" onclick="irASeccion('condimentos')">
-    <img src="img/categorias/condimentos.png">
-    <h3>Condimentos</h3>
-    <p id="count-condimentos"></p>
-  </div>
+  <button class="categoria-flecha flecha-der"
+          onclick="scrollCategorias(300)">›</button>
 
-  <div class="categoria-card" onclick="irASeccion('hierbas')">
-    <img src="img/categorias/hierbas.png">
-    <h3>Hierbas</h3>
-    <p id="count-hierbas"></p>
-  </div>
-
-  <div class="categoria-card" onclick="irASeccion('tes')">
-    <img src="img/categorias/tes.png">
-    <h3>Tés</h3>
-    <p id="count-tes"></p>
-  </div>
-
-</div>
-
-<button class="categoria-flecha flecha-der" onclick="scrollCategorias(300)">›</button>
-
-</div>
-
-	
 </div>
 	
 <!-- RESULTADOS DE BUSQUEDA -->
