@@ -3405,53 +3405,75 @@ function actualizarContadoresCategorias(){
 
 function construirSubmenus() {
 
-  const categoriasPadre = ["almacen", "aromas", "terapias"];
+  const grupos = {
+    insumos: new Set(),
+    productos: new Set()
+  };
 
-  categoriasPadre.forEach(cat => {
+  // Separar las categorías según el prefijo del ID
+  productos.forEach(producto => {
 
-    const contenedor = document.getElementById("submenu-" + cat);
+    const id = (producto.id || "").toUpperCase();
+
+    if (id.startsWith("INS-")) {
+      if (producto.categoria) {
+        grupos.insumos.add(producto.categoria);
+      }
+    }
+
+    if (id.startsWith("PROD-")) {
+      if (producto.categoria) {
+        grupos.productos.add(producto.categoria);
+      }
+    }
+
+  });
+
+
+  // Crear los enlaces dentro de cada menú
+  Object.entries(grupos).forEach(([grupo, categorias]) => {
+
+    const contenedor = document.getElementById("submenu-" + grupo);
+
     if (!contenedor) return;
 
     contenedor.innerHTML = "";
 
-    const subcategorias = new Set(
-      productos
-       .filter(p => 
-  p.categoria?.toLowerCase().trim() === cat &&
-  p.subcategoria
-)
-        .map(p => p.subcategoria)
-    );
+    [...categorias]
+      .sort((a, b) => a.localeCompare(b, "es"))
+      .forEach(categoria => {
 
-    if (subcategorias.size === 0) {
-      // 🔥 Si no hay subcategorías, ocultamos el submenu padre
-      const itemPadre = contenedor.closest(".submenu-item");
-      if (itemPadre) itemPadre.style.display = "none";
-      return;
-    }
+        const enlace = document.createElement("a");
 
-    // 🔥 Mostrar el submenu padre
-    const itemPadre = contenedor.closest(".submenu-item");
-    if (itemPadre) itemPadre.style.display = "block";
+        enlace.href = "#";
+        enlace.textContent = categoria
+          .split(" ")
+          .map(palabra =>
+            palabra.charAt(0).toUpperCase() + palabra.slice(1)
+          )
+          .join(" ");
 
-    subcategorias.forEach(sub => {
+        enlace.onclick = function(e) {
 
-      const link = document.createElement("a");
-      link.href = "#";
-      link.textContent = sub
-  .split(" ")
-  .map(p => p.charAt(0).toUpperCase() + p.slice(1))
-  .join(" ");
+          e.preventDefault();
 
-      link.onclick = function(e) {
-        e.preventDefault();
-        mostrarSubcategoria(cat, sub);
-      };
+          // Por ahora solamente cerramos el menú.
+          // La navegación a la categoría la conectaremos
+          // cuando creemos las secciones dinámicas.
+          const submenu = enlace.closest(".submenu");
 
-      contenedor.appendChild(link);
-    });
+          if (submenu) {
+            submenu.classList.remove("activo");
+          }
+
+        };
+
+        contenedor.appendChild(enlace);
+
+      });
 
   });
+
 }
 		
 
