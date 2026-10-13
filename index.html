@@ -3415,13 +3415,13 @@ function construirSubmenus() {
 
     const id = (producto.id || "").toUpperCase();
 
-    if (id.startsWith("INS-")) {
+    if (id.startsWith("INS")) {
       if (producto.categoria) {
         grupos.insumos.add(producto.categoria);
       }
     }
 
-    if (id.startsWith("PROD-")) {
+    if (id.startsWith("PROD")) {
       if (producto.categoria) {
         grupos.productos.add(producto.categoria);
       }
