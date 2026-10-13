@@ -3315,34 +3315,65 @@ precioSpan.textContent = precioActual;
 		
 function renderProductos() {
 
-  // 🔹 Limpiar todos los contenedores de categorías
-  document.querySelectorAll("[id^='contenedor-']").forEach(c => {
-    c.innerHTML = "";
+  // =====================================================
+  // LIMPIAR CATEGORÍAS DINÁMICAS ANTERIORES
+  // =====================================================
+
+  document.querySelectorAll(".categoria-dinamica").forEach(seccion => {
+    seccion.remove();
   });
+
+
+  // =====================================================
+  // AGRUPAR PRODUCTOS POR CATEGORÍA Y SUBCATEGORÍA
+  // =====================================================
 
   const categoriasAgrupadas = {};
 
-  // 🔹 Agrupar productos por categoría y subcategoría
   productos.forEach(prod => {
 
-    if (!categoriasAgrupadas[prod.categoria]) {
-      categoriasAgrupadas[prod.categoria] = {};
+    const categoria = prod.categoria || "otros";
+    const subcategoria = prod.subcategoria || "general";
+
+    if (!categoriasAgrupadas[categoria]) {
+      categoriasAgrupadas[categoria] = {};
     }
 
-    const sub = prod.subcategoria || "General";
-
-    if (!categoriasAgrupadas[prod.categoria][sub]) {
-      categoriasAgrupadas[prod.categoria][sub] = [];
+    if (!categoriasAgrupadas[categoria][subcategoria]) {
+      categoriasAgrupadas[categoria][subcategoria] = [];
     }
 
-    categoriasAgrupadas[prod.categoria][sub].push(prod);
+    categoriasAgrupadas[categoria][subcategoria].push(prod);
+
   });
 
-  // 🔹 Renderizar cada categoría
+
+  // =====================================================
+  // CREAR UNA SECCIÓN DINÁMICA POR CATEGORÍA
+  // =====================================================
+
   Object.keys(categoriasAgrupadas).forEach(cat => {
 
-    const contenedorCategoria = document.getElementById("contenedor-" + cat);
-    if (!contenedorCategoria) return;
+    const seccion = document.createElement("div");
+
+    seccion.classList.add("categoria");
+    seccion.classList.add("categoria-dinamica");
+
+    // ID seguro para usarlo posteriormente
+    const idCategoria = "categoria-" + normalizar(cat)
+      .replace(/\s+/g, "-");
+
+    seccion.id = idCategoria;
+
+
+    const contenedor = document.createElement("div");
+
+    contenedor.classList.add("contenedor-productos");
+
+
+    // =================================================
+    // SUBCATEGORÍAS
+    // =================================================
 
     const subcategorias = categoriasAgrupadas[cat];
 
@@ -3350,40 +3381,82 @@ function renderProductos() {
 
       const productosSub = subcategorias[sub];
 
-      // 👉 SOLO mostramos título si la categoría es HIERBAS
-      if (cat === "hierbas") {
+
+      // -----------------------------------------------
+      // TÍTULO DE SUBCATEGORÍA
+      // -----------------------------------------------
+
+      if (sub !== "general") {
 
         const titulo = document.createElement("h3");
+
         titulo.classList.add("subcategoria");
+
         titulo.textContent = sub;
 
-        const linea = document.createElement("div");
-        linea.classList.add("linea-subcategoria");
+        contenedor.appendChild(titulo);
 
-        contenedorCategoria.appendChild(titulo);
-        contenedorCategoria.appendChild(linea);
       }
 
-      // 🔹 Bloque contenedor de tarjetas
- const bloque = document.createElement("div");
-bloque.classList.add("bloque-subcategoria");
 
-// 🔥 Identificación estructural
-bloque.dataset.categoria = cat;
-bloque.dataset.subcategoria = sub.toLowerCase().trim();
+      // -----------------------------------------------
+      // BLOQUE DE PRODUCTOS
+      // -----------------------------------------------
+
+      const bloque = document.createElement("div");
+
+      bloque.classList.add("bloque-subcategoria");
+
+      bloque.dataset.categoria = cat;
+
+      bloque.dataset.subcategoria =
+        sub.toLowerCase().trim();
+
+
+      // -----------------------------------------------
+      // TARJETAS
+      // -----------------------------------------------
 
       productosSub.forEach(prod => {
+
         const tarjeta = crearTarjetaProducto(prod);
+
         bloque.appendChild(tarjeta);
+
       });
 
-      contenedorCategoria.appendChild(bloque);
+
+      contenedor.appendChild(bloque);
 
     });
 
+
+    seccion.appendChild(contenedor);
+
+
+    // =================================================
+    // INSERTAR DESPUÉS DEL INICIO
+    // =================================================
+
+    const inicio = document.getElementById("inicio");
+
+    if (inicio) {
+
+      inicio.parentNode.insertBefore(
+        seccion,
+        inicio.nextSibling
+      );
+
+    }
+
   });
 
-construirSubmenus();	
+
+  console.log(
+    "Categorías dinámicas creadas:",
+    Object.keys(categoriasAgrupadas)
+  );
+
 }
 
 function actualizarContadoresCategorias(){
