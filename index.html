@@ -2887,18 +2887,26 @@ function irASeccion(seccion, e) {
   const menu = document.getElementById("menu");
   const overlay = document.getElementById("overlay");
 
-  // 🔥 PRIMERO cerrar menú
-  menu.classList.remove("activo");
-  overlay.classList.remove("visible");
+  // Cerrar menú mobile
+  if (menu) {
+    menu.classList.remove("activo");
+  }
 
+  if (overlay) {
+    overlay.classList.remove("visible");
+  }
+
+  // Cerrar submenús
   document.querySelectorAll(".submenu").forEach(sub => {
     sub.classList.remove("activo");
   });
 
-  // 🔥 DESPUÉS mostrar sección
+  // Mostrar sección
   mostrar(seccion);
+
 }
 
+		
 function abrirProducto(id) {
 
   const producto = productos.find(p => p.id === id);
@@ -3492,34 +3500,46 @@ function construirSubmenus() {
     productos: new Set()
   };
 
-  // Separar las categorías según el prefijo del ID
+  // =====================================================
+  // SEPARAR CATEGORÍAS SEGÚN EL ID DEL PRODUCTO
+  // =====================================================
+
   productos.forEach(producto => {
 
     const id = (producto.id || "").toUpperCase();
 
     if (id.startsWith("INS")) {
+
       if (producto.categoria) {
         grupos.insumos.add(producto.categoria);
       }
+
     }
 
     if (id.startsWith("PROD")) {
+
       if (producto.categoria) {
         grupos.productos.add(producto.categoria);
       }
+
     }
 
   });
 
 
-  // Crear los enlaces dentro de cada menú
+  // =====================================================
+  // CREAR ENLACES
+  // =====================================================
+
   Object.entries(grupos).forEach(([grupo, categorias]) => {
 
-    const contenedor = document.getElementById("submenu-" + grupo);
+    const contenedor =
+      document.getElementById("submenu-" + grupo);
 
     if (!contenedor) return;
 
     contenedor.innerHTML = "";
+
 
     [...categorias]
       .sort((a, b) => a.localeCompare(b, "es"))
@@ -3528,27 +3548,33 @@ function construirSubmenus() {
         const enlace = document.createElement("a");
 
         enlace.href = "#";
+
         enlace.textContent = categoria
           .split(" ")
           .map(palabra =>
-            palabra.charAt(0).toUpperCase() + palabra.slice(1)
+            palabra.charAt(0).toUpperCase() +
+            palabra.slice(1)
           )
           .join(" ");
+
+
+        // =================================================
+        // AL HACER CLICK → MOSTRAR LA SECCIÓN
+        // =================================================
 
         enlace.onclick = function(e) {
 
           e.preventDefault();
+          e.stopPropagation();
 
-          // Por ahora solamente cerramos el menú.
-          // La navegación a la categoría la conectaremos
-          // cuando creemos las secciones dinámicas.
-          const submenu = enlace.closest(".submenu");
+          const idSeccion =
+            "categoria-" + normalizar(categoria)
+              .replace(/\s+/g, "-");
 
-          if (submenu) {
-            submenu.classList.remove("activo");
-          }
+          irASeccion(idSeccion);
 
         };
+
 
         contenedor.appendChild(enlace);
 
