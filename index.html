@@ -1873,44 +1873,26 @@ scroll-snap-align: start;
 	  
    <a href="#" onclick="volverAlInicio(); return false;">Inicio</a>
 
+<a href="#" onclick="volverAlInicio(); return false;">Inicio</a>
+
 <div class="submenu">
-<a href="#" class="submenu-btn" onclick="toggleSubmenu(event)">
-  Productos
-</a>
-
-
+  <a href="#" class="submenu-btn" onclick="toggleSubmenu(event)">
+    Insumos
+  </a>
 
   <div class="submenu-lista">
+    <div class="submenu-dinamico" id="submenu-insumos"></div>
+  </div>
+</div>
 
-  <div class="submenu-item">
-<a href="#" onclick="toggleSubSubmenu(event, this)">
-    Almacén Natural ▸
+<div class="submenu">
+  <a href="#" class="submenu-btn" onclick="toggleSubmenu(event)">
+    Productos
   </a>
-  <div class="submenu-dinamico" id="submenu-almacen"></div>
-</div>
-  <a href="#" onclick="irASeccion('hierbas'); return false;">Hierbas</a>
-  <a href="#" onclick="irASeccion('tes'); return false;">Tés</a>
-  <a href="#" onclick="irASeccion('condimentos'); return false;">Condimentos</a>
- 
-	  <div class="submenu-item">
- <a href="#" onclick="toggleSubSubmenu(event, this)">
-    Aromas & Ritual ▸
-  </a>
-  <div class="submenu-dinamico" id="submenu-aromas"></div>
-</div>
 
- <div class="submenu-item">
- <a href="#" onclick="toggleSubSubmenu(event, this)">
-    Terapias Naturales ▸
-  </a>
-  <div class="submenu-dinamico" id="submenu-terapias"></div>
-</div>
-
-	  
-  <a href="#" onclick="irASeccion('panificados'); return false;">Panificados</a>
-  <a href="#" onclick="irASeccion('regaleria'); return false;">Regalería</a>
-
-</div>
+  <div class="submenu-lista">
+    <div class="submenu-dinamico" id="submenu-productos"></div>
+  </div>
 </div>
 
     <a onclick="mostrar('ofertas')">Ofertas</a>
