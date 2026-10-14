@@ -2117,6 +2117,10 @@ async function cargarProductosDesdeCSV() {
           ? "imagenes/" + fila.imagen.trim()
           : "",
 
+        tipoVenta: fila.tipo_venta
+          ? fila.tipo_venta.trim().toLowerCase()
+          : "unidad",
+
         opciones: [
           {
             peso: opcion,
