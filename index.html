@@ -3210,21 +3210,52 @@ precioSpan.textContent = precioActual;
 
   // ===== CONTROL CANTIDAD =====
 
-  btnMas.addEventListener("click", () => {
+const esMetro = producto.tipoVenta === "metro";
+
+// Cantidad inicial
+cantidad = esMetro ? 0.50 : 1;
+
+cantidadSpan.textContent = esMetro
+  ? "0,50 m"
+  : "1";
+
+// SUMAR
+btnMas.addEventListener("click", () => {
+
+  if (esMetro) {
+
+    cantidad = Math.round((cantidad + 0.10) * 100) / 100;
+    cantidadSpan.textContent = cantidad.toFixed(2).replace(".", ",") + " m";
+
+  } else {
 
     cantidad++;
     cantidadSpan.textContent = cantidad;
 
-  });
+  }
 
-  btnMenos.addEventListener("click", () => {
+});
 
-    if(cantidad > 1){
+// RESTAR
+btnMenos.addEventListener("click", () => {
+
+  if (esMetro) {
+
+    if (cantidad > 0.50) {
+      cantidad = Math.round((cantidad - 0.10) * 100) / 100;
+      cantidadSpan.textContent = cantidad.toFixed(2).replace(".", ",") + " m";
+    }
+
+  } else {
+
+    if (cantidad > 1) {
       cantidad--;
       cantidadSpan.textContent = cantidad;
     }
 
-  });
+  }
+
+});
 
 
   // ===== AGREGAR AL CARRITO =====
