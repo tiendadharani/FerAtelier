@@ -2283,7 +2283,7 @@ function mostrarCarrito() {
     lista.appendChild(li);
   });
 
-  document.getElementById("total").textContent = "$" + total;
+  document.getElementById("total").textContent = "$" + total.toFixed(2);
 
   actualizarBarraCarrito(total);
 }
@@ -2303,7 +2303,7 @@ function actualizarBarraCarrito(total) {
   }
 
   if (totalSpan) {
-    totalSpan.textContent = "$" + total;
+    totalSpan.textContent = "$" + total.toFixed(2);
   }
 
 const cantDesktop = document.getElementById("carrito-cantidad-desktop");
