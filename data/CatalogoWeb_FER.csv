@@ -5,30 +5,30 @@ Diseñada para acompañarte en tu día a día con el máximo confort y resistenc
 INS-000130,Abrojo De 16mm,Abrojos,,,,,Negro,585.49,10,SI,Metro
 INS-000131,Abrojo de 16mm,Abrojos,,,,,Blanco,585.49,10,SI,Metro
 INS-000026,Aceite incoloro ,Otros,Aceite/Lubricante,,,,100ml,4600,2,SI,Unidad
-INS-000018,Aguja Doble Arrastre Organ Dpx17,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,16,4850,2,SI,Unidad
-INS-000015,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,12,6250,1,SI,Unidad
-INS-000016,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,14,6250,1,SI,Unidad
-INS-000017,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,16,6250,1,SI,Unidad
+INS-000018,Aguja Doble Arrastre Organ Dpx17,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,16,4850,2,NO,Unidad
+INS-000015,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas overlock dcx27.webp,12,6250,1,SI,Unidad
+INS-000016,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas overlock dcx27.webp,14,6250,1,SI,Unidad
+INS-000017,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas overlock dcx27.webp,16,6250,1,SI,Unidad
 INS-000134,Aguja para Lana sin Punta Importada,Agujas y Alfileres,Agujas Coser a Mano,,,,16,585.49,20,SI,Unidad
 INS-000133,Aguja para Lana sin Punta Importada ,Agujas y Alfileres,Agujas Coser a Mano,,,,18,585.49,20,SI,Unidad
-INS-000005,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,10,3600,2,SI,Unidad
-INS-000006,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,12,3600,2,SI,Unidad
-INS-000007,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,14,3600,2,SI,Unidad
-INS-000008,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,16,3600,1,SI,Unidad
-INS-000009,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,18,3600,2,SI,Unidad
+INS-000005,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,10,3600,2,SI,Unidad
+INS-000006,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,12,3600,2,SI,Unidad
+INS-000007,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,14,3600,2,SI,Unidad
+INS-000008,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,16,3600,1,SI,Unidad
+INS-000009,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,18,3600,2,SI,Unidad
 INS-000125,Agujas Modista Lotus x 25u,Agujas y Alfileres,Agujas Coser a Mano,,,,7,585.49,2,SI,Unidad
 INS-000126,Alfileres Cabeza de Vidrio x50u,Agujas y Alfileres,Alfileres,,,,Vidrio,585.49,2,SI,Unidad
 INS-000047,Argolla Cerrada 60x6,Herrajes y Accesorios,Argollas,,,,Niquel,930,20,SI,Unidad
-INS-000003,Bobina,Otros,Bobinas,,,,Recta Industrial,5000,2,SI,Unidad
+INS-000003,Bobina,Otros,Bobinas,,,bobina recta industrial.webp,Recta Industrial,5000,2,SI,Unidad
 INS-000078,Broche Imán 18mm,Herrajes y Accesorios,Broches,,,,Niquel,211.32,14,SI,Unidad
 INS-000066,"Broche Resorte 12,5mm",Herrajes y Accesorios,Broches,,,,Niquel,102.17,125,SI,Unidad
 INS-000065,Broche Resorte 15mm,Herrajes y Accesorios,Broches,,,,Niquel,115.62,137,SI,Unidad
 INS-000128,Broche Snap 13/15,Herrajes y Accesorios,Broches,,,,Negro,585.49,190,SI,Unidad
 INS-000129,Broche Snap 13/15,Herrajes y Accesorios,Broches,,,,Blanco Crudo,585.49,190,SI,Unidad
-INS-000004,Carretel,Otros,Carreteles,,,,Recta Industrial,560,20,SI,Unidad
+INS-000004,Carretel,Otros,Carreteles,,,carretel recta industrial.webp,Recta Industrial,560,20,SI,Unidad
 INS-000019,Carretel ,Otros,Carreteles,,,,Doble Arrastre,1950,10,SI,Unidad
 INS-000028,Cierre Aluminio N°5,Cierres y Deslizadores,Cierre Metálico,,,,Plata,1400,5,SI,Metro
-INS-000064,Cierre Cadena Bronce YKK,Cierres y Deslizadores,Cierre Metálico,,,,Bronce Viejo,5700,3,SI,Metro
+INS-000064,Cierre Cadena Bronce YKK,Cierres y Deslizadores,Cierre Metálico,,,Cierre YKK Oro N8.webp,Bronce Viejo,5700,3,SI,Metro
 INS-000140,Cierre Diente de Perro N5,Cierres y Deslizadores,Cierre Diente de Perro,,,,Negro/Plata,585.49,9,SI,Metro
 INS-000141,Cierre Diente de Perro N5,Cierres y Deslizadores,Cierre Diente de Perro,,,,Negro,585.49,20,SI,Metro
 INS-000101,Cierre Plástico N°3,Cierres y Deslizadores,Cierre Plástico,,,,Azul Francia,438.8,5.8,SI,Metro
@@ -127,11 +127,11 @@ INS-000110,Deslizador 4mm,Cierres y Deslizadores,Deslizadores Cierre Plástico,,
 INS-000118,Deslizador Americano N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,199.21,36,SI,Unidad
 INS-000105,"Deslizador Americano N°6,4",Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,286.77,19,SI,Unidad
 INS-000112,"Deslizador Argollita N°5/5,8",Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,319.58,9,SI,Unidad
-INS-000111,Deslizador Asterizco N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,369.6,27,SI,Unidad
+INS-000111,Deslizador Asterisco N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,ASTERISCO5.8.webp,Niquel,369.6,27,SI,Unidad
 INS-000107,Deslizador Bolita N°3,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,192.04,43,SI,Unidad
-INS-000116,Deslizador Campanita YKK N°8 Metálico,Cierres y Deslizadores,Deslizadores Cierre Metálico,,,,Oro,1323.47,20,SI,Unidad
+INS-000116,Deslizador Campanita YKK N°8 Metálico,Cierres y Deslizadores,Deslizadores Cierre Metálico,,,Cierre YKK Oro N8.webp,Oro,1323.47,20,SI,Unidad
 INS-000144,Deslizador Cierre Plástico N°8,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,585.49,50,SI,Unidad
-INS-000119,Deslizador Común N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,niquel,97.7,476,SI,Unidad
+INS-000119,Deslizador Común N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,COMUN5.8.jpg,niquel,97.7,476,SI,Unidad
 INS-000117,Deslizador Corazón N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,290.98,20,SI,Unidad
 INS-000029,Deslizador Diente de perro y aluminio N°5,Cierres y Deslizadores,Deslizadores Cierre Diente de Perro,,,,Niquel,150,20,SI,Unidad
 INS-000035,Deslizador Europeo N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,340,18,SI,Unidad
@@ -140,8 +140,8 @@ INS-000036,Deslizador Gota Grande N°6,Cierres y Deslizadores,Deslizadores Cierr
 INS-000108,Deslizador Importado N°3,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,56.33,81,SI,Unidad
 INS-000109,Deslizador Importado N°3,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Negro,145.91,16,SI,Unidad
 INS-000106,Deslizador Importado N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Negro,97.7,89,SI,Unidad
-INS-000113,"Deslizador N°5/5,8 Estrella",Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,290.72,7,SI,Unidad
-INS-000115,"Deslizador Neon N°5/5,8",Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,317.77,20,SI,Unidad
+INS-000113,"Deslizador N°5/5,8 Estrella",Cierres y Deslizadores,Deslizadores Cierre Plástico,,,ESTRELLA5.8.webp,Niquel,290.72,7,SI,Unidad
+INS-000115,"Deslizador Neon N°5/5,8",Cierres y Deslizadores,Deslizadores Cierre Plástico,,,NEON5.8.webp,Niquel,317.77,20,SI,Unidad
 INS-000037,Deslizador Pau N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,550,14,SI,Unidad
 INS-000039,Deslizador Romy N°5,Cierres y Deslizadores,Deslizadores Cierre Metálico,,,,Bronce Viejo,350,20,SI,Unidad
 INS-000132,Elástico de Algodón 10mm,Elasticos y Cordones,Elástico,,,,Crudo,585.49,40,SI,Metro
@@ -155,8 +155,8 @@ INS-000022,Hilo Xi k 36 x 2500m,Hilos,Hilos Jean,,,,COR-0026,5300,1,NO,Unidad
 INS-000023,Hilo Xi k 36 x 2500m,Hilos,Hilos Jean,,,,COR-0470,5300,1,NO,Unidad
 INS-000025,Hilo Xi k 36 x 3657m,Hilos,Hilos Jean,,,,COR-0082,7800,1,NO,Unidad
 INS-000114,Llavero con Cadena Reforzado,Herrajes y Accesorios,Otros,,,,Niquel,333.63,64,SI,Unidad
-INS-000001,Lubricante blanco,Otros,Aceite/Lubricante,,,,1L,19200,1,SI,Unidad
-INS-000002,Lubricante blanco,Otros,Aceite/Lubricante,,,,500c,11000,2,SI,Unidad
+INS-000001,Lubricante blanco,Otros,Aceite/Lubricante,,,lubrilina 1lt.webp,1L,19200,1,SI,Unidad
+INS-000002,Lubricante blanco,Otros,Aceite/Lubricante,,,lubrilina 500cc.webp,500c,11000,2,SI,Unidad
 INS-000040,Matriz Broche Resorte,Herramientas,Matrices y Sacabocado,,,,"12,5",29900,1,SI,Unidad
 INS-000081,Medialuna Baja Liviana P/30,Herrajes y Accesorios,Medialunas,,,,Niquel,70.71,8,SI,Unidad
 INS-000083,Medialuna Baja Pesada P/30,Herrajes y Accesorios,Medialunas,,,,Niquel,97.28,39,SI,Unidad
@@ -185,11 +185,11 @@ INS-000063,Ojalón Común Manual,Herrajes y Accesorios,Ojales,,,,Bronce Viejo,25
 INS-000041,Ojalón Oval,Herrajes y Accesorios,Ojales,,,,Niquel,600,50,SI,Unidad
 INS-000042,Ojalón Oval,Herrajes y Accesorios,Ojales,,,,Bronce Viejo,600,50,SI,Unidad
 INS-000027,PCV Cristal,Telas,PVC Cristal,,,,N°3,7600,6,SI,Metro
-INS-000014,Prensatela Cose y Corta Familiar ,Otros,Prensatelas ,,,,Falso Overlock,32100,1,SI,Unidad
-INS-000013,Prensatela de Teflón para Recta ,Otros,Prensatelas ,,,,T350,6500,1,SI,Unidad
-INS-000012,Prensatela para Recta,Otros,Prensatelas ,,,,P351,2500,3,SI,Unidad
-INS-000011,Prensatela para Recta Cierre Ambidiestro,Otros,Prensatelas ,,,,P363,8100,0,NO,Unidad
-INS-000010,Prensatela Teflón Recta Industrial Cierre Ambidiestro,Otros,Prensatelas ,,,,T363,6300,1,SI,Unidad
+INS-000014,Prensatela Cose y Corta Familiar ,Otros,Prensatelas ,,,prensatela familiar falso overlock.webp,Falso Overlock,32100,1,SI,Unidad
+INS-000013,Prensatela de Teflón para Recta ,Otros,Prensatelas ,,,prensatela teflon recta.webp,T350,6500,1,SI,Unidad
+INS-000012,Prensatela para Recta,Otros,Prensatelas ,,,prensatela recta.webp,P351,2500,3,SI,Unidad
+INS-000011,Prensatela para Recta Cierre Ambidiestro,Otros,Prensatelas ,,,prensatela cierre ambidiestro.webp,P363,8100,0,NO,Unidad
+INS-000010,Prensatela Teflón Recta Industrial Cierre Ambidiestro,Otros,Prensatelas ,,,prensatela teflon cierre ambidiestro.webp,T363,6300,1,SI,Unidad
 INS-000087,Regulador Cubo P/20 Pesado,Herrajes y Accesorios,Regulador,,,,Niquel,474.32,48,SI,Unidad
 INS-000086,Regulador Pase 25 Liviano,Herrajes y Accesorios,Regulador,,,,Niquel,131.4,47,SI,Unidad
 INS-000054,Regulador Pase 30 G,Herrajes y Accesorios,Regulador,,,,Bronce Viejo,300,20,SI,Unidad
