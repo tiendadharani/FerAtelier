@@ -2930,7 +2930,7 @@ if(selectOpciones){
     precioActual = Number(opcion.value);
     pesoActual = opcion.dataset.peso;
 
-    precioSpan.textContent = precioActual;
+    precioSpan.textContent = formatearPrecio(precioActual);
 
   });
 
@@ -2956,7 +2956,7 @@ if (selector) {
     precioActual = Number(opcionSeleccionada.value);
     pesoActual = opcionSeleccionada.dataset.peso;
 
-    precioSpan.textContent = precioActual;
+    precioSpan.textContent = formatearPrecio(precioActual);
 
     const nuevaImagen = opcionSeleccionada.dataset.imagen;
     const img = contenedor.querySelector(".detalle-imagen img");
@@ -3006,7 +3006,7 @@ if(scrollContainer && btnIzq && btnDer){
 
       precioActual = Number(btn.dataset.precio);
       pesoActual = btn.dataset.peso;
-      precioSpan.textContent = precioActual;
+      precioSpan.textContent = formatearPrecio(precioActual);
     });
   });
 
@@ -3195,7 +3195,7 @@ precioActual = Number(this.value);
 
 pesoActual = this.options[this.selectedIndex].dataset.peso;
 
-precioSpan.textContent = precioActual;
+precioSpan.textContent = formatearPrecio(precioActual);
 
 });
 
@@ -3218,7 +3218,7 @@ precioSpan.textContent = precioActual;
       precioActual = Number(opcion.value);
       pesoActual = opcion.dataset.peso;
 
-      precioSpan.textContent = precioActual;
+      precioSpan.textContent = formatearPrecio(precioActual);
 
     });
 
