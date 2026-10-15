@@ -2887,8 +2887,12 @@ function abrirProducto(id) {
 </select>
 
         <div class="precio">
-        $<span class="precio-valor">${producto.opciones[0]?.precio ?? "SIN STOCK"}</span>
-        </div>
+		  $<span class="precio-valor">${
+		    producto.opciones[0]?.precio != null
+		      ? formatearPrecio(producto.opciones[0].precio)
+		      : "SIN STOCK"
+		  }</span>
+		</div>
 
         <div class="footer-compra">
           <div class="cantidad-control">
