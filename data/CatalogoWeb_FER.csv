@@ -2,10 +2,10 @@
 PROD-000001,Riñonera,Riñoneras,,Riñonera urbana en Cordura resistente con interior impermeable.,"Riñonera Urbana en Cordura Impermeable
 
 Diseñada para acompañarte en tu día a día con el máximo confort y resistencia. Confeccionada en tela Cordura de alta durabilidad y forrada internamente en tela Silver impermeable para mantener tus pertenencias siempre protegidas. Cuenta con correa regulable y broche enchufe de plástico reforzado que se adapta perfectamente a tu estilo (cruzada o a la cintura). ¡El accesorio práctico y moderno que no te puede faltar!",prueba.png,Negra,8900,1,SI,unidad
-INS-000130,Abrojo De 16mm,Abrojos,,,,,Negro,585.49,10,SI,Metro
-INS-000131,Abrojo de 16mm,Abrojos,,,,,Blanco,585.49,10,SI,Metro
-INS-000026,Aceite incoloro ,Otros,Aceite/Lubricante,,,,100ml,4600,2,SI,Unidad
-INS-000018,Aguja Doble Arrastre Organ Dpx17,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,,16,4850,2,NO,Unidad
+INS-000130,Abrojo De 16mm,Abrojos,,,,abrojo 16mm negro.webp,Negro,585.49,10,SI,Metro
+INS-000131,Abrojo de 16mm,Abrojos,,,,abrojo 16mm blanco.webp,Blanco,585.49,10,SI,Metro
+INS-000026,Aceite incoloro ,Otros,Aceite/Lubricante,,,vr75aceitera.jpg,100ml,4600,2,SI,Unidad
+INS-000018,Aguja Doble Arrastre Organ Dpx17,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,aguja doble arrastre dpx17.webp,16,4850,2,NO,Unidad
 INS-000015,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas overlock dcx27.webp,12,6250,1,SI,Unidad
 INS-000016,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas overlock dcx27.webp,14,6250,1,SI,Unidad
 INS-000017,Aguja Overlock Organ Dcx27,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas overlock dcx27.webp,16,6250,1,SI,Unidad
@@ -16,9 +16,9 @@ INS-000006,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de
 INS-000007,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,14,3600,2,SI,Unidad
 INS-000008,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,16,3600,1,SI,Unidad
 INS-000009,Aguja Recta Industrial Dbx1 x 10,Agujas y Alfileres,Agujas Maquina de Coser Industrial,,,agujas organ dbx1.webp,18,3600,2,SI,Unidad
-INS-000125,Agujas Modista Lotus x 25u,Agujas y Alfileres,Agujas Coser a Mano,,,,7,585.49,2,SI,Unidad
-INS-000126,Alfileres Cabeza de Vidrio x50u,Agujas y Alfileres,Alfileres,,,,Vidrio,585.49,2,SI,Unidad
-INS-000047,Argolla Cerrada 60x6,Herrajes y Accesorios,Argollas,,,,Niquel,930,20,SI,Unidad
+INS-000125,Agujas Modista Lotus x 25u,Agujas y Alfileres,Agujas Coser a Mano,,,lotus ojo dorado.webp,7,585.49,2,SI,Unidad
+INS-000126,Alfileres Cabeza de Vidrio x50u,Agujas y Alfileres,Alfileres,,,alfiler cabeza vidrio.webp,Vidrio,585.49,2,SI,Unidad
+INS-000047,Argolla Cerrada 60x6 B1278,Herrajes y Accesorios,Argollas,,,argolla 60-6.webp,Niquel,930,20,SI,Unidad
 INS-000003,Bobina,Otros,Bobinas,,,bobina recta industrial.webp,Recta Industrial,5000,2,SI,Unidad
 INS-000078,Broche Imán 18mm,Herrajes y Accesorios,Broches,,,,Niquel,211.32,14,SI,Unidad
 INS-000066,"Broche Resorte 12,5mm",Herrajes y Accesorios,Broches,,,,Niquel,102.17,125,SI,Unidad
@@ -28,7 +28,7 @@ INS-000129,Broche Snap 13/15,Herrajes y Accesorios,Broches,,,,Blanco Crudo,585.4
 INS-000004,Carretel,Otros,Carreteles,,,carretel recta industrial.webp,Recta Industrial,560,20,SI,Unidad
 INS-000019,Carretel ,Otros,Carreteles,,,,Doble Arrastre,1950,10,SI,Unidad
 INS-000028,Cierre Aluminio N°5,Cierres y Deslizadores,Cierre Metálico,,,,Plata,1400,5,SI,Metro
-INS-000064,Cierre Cadena Bronce YKK,Cierres y Deslizadores,Cierre Metálico,,,Cierre YKK Oro N8.webp,Bronce Viejo,5700,3,SI,Metro
+INS-000064,Cierre Cadena Bronce YKK  580,Cierres y Deslizadores,Cierre Metálico,,,Cierre Metalico BV 5.webp,Bronce Viejo,5700,3,SI,Metro
 INS-000140,Cierre Diente de Perro N5,Cierres y Deslizadores,Cierre Diente de Perro,,,,Negro/Plata,585.49,9,SI,Metro
 INS-000141,Cierre Diente de Perro N5,Cierres y Deslizadores,Cierre Diente de Perro,,,,Negro,585.49,20,SI,Metro
 INS-000101,Cierre Plástico N°3,Cierres y Deslizadores,Cierre Plástico,,,,Azul Francia,438.8,5.8,SI,Metro
@@ -59,7 +59,7 @@ INS-000187,Cierre Plástico N°6,Cierres y Deslizadores,Cierre Plástico,,,,Verd
 INS-000188,Cierre Plástico N°6,Cierres y Deslizadores,Cierre Plástico,,,,Fucsia,585.49,7,SI,Metro
 INS-000189,Cierre Plástico N°6,Cierres y Deslizadores,Cierre Plástico,,,,Violeta,585.49,9,SI,Metro
 INS-000190,Cierre Plástico N°6,Cierres y Deslizadores,Cierre Plástico,,,,Amarillo Oro,585.49,3,SI,Metro
-INS-000143,Cierre Ykk Nro8,Cierres y Deslizadores,Cierre Metálico,,,,Negro/Oro,6703.93,4,SI,Metro
+INS-000143,Cierre Ykk Nro8,Cierres y Deslizadores,Cierre Metálico,,,Cierre YKK Oro N8.webp,Negro/Oro,6703.93,4,SI,Metro
 INS-000160,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Negro,585.49,45,SI,Metro
 INS-000161,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Azul Francia,585.49,18,SI,Metro
 INS-000162,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Habano,585.49,25,SI,Metro
@@ -77,10 +77,10 @@ INS-000173,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Celeste Brillante,585.49,25,SI,M
 INS-000174,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Verde Benetton,585.49,20,SI,Metro
 INS-000175,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Amarillo Oro,585.49,25,SI,Metro
 INS-000176,Cinta Bies 20mm,Cintas,Cinta Bies,,,,Turquesa,585.49,20,SI,Metro
-INS-000127,Cinta Gross Argentina Ondina,Cintas,Cinta Gross,,,,10mm,585.49,49,SI,Metro
-INS-000135,Cinta Gross Argentina Ondina,Cintas,Cinta Gross,,,,20mm,585.49,25,SI,Metro
+INS-000127,Cinta Gross Argentina Ondina,Cintas,Cinta Gross,,,gross 10mm ondina argentina.webp,10mm,585.49,49,SI,Metro
+INS-000135,Cinta Gross Argentina Ondina,Cintas,Cinta Gross,,,gross 20mm argentina.webp,20mm,585.49,25,SI,Metro
 INS-000159,Cinta Guardapampa 20mm,Cintas,Cinta Guardapampa,,,,Marron/Beige,585.49,10,SI,Metro
-INS-000136,Cinta Hilera Pesada De Algodón 25mm,Cintas,Hilera,,,,Crudo,585.49,45,SI,Metro
+INS-000136,Cinta Hilera Pesada De Algodón 25mm,Cintas,Hilera,,,hilera 25mm pesada crudo.webp,Crudo,585.49,45,SI,Metro
 INS-000137,Cinta Mochilera De Algodón 40mm,Cintas,Cinta Mochilera,,,,Crudo,585.49,40,SI,Metro
 INS-000151,Cinta Mochilera Liviana P/30,Cintas,Cinta Mochilera,,,,Negra,585.49,40,SI,Metro
 INS-000158,Cinta Mochilera Rayas P/30,Cintas,Cinta Mochilera,,,,Rosados/Amarillo,585.49,10,SI,Metro
@@ -130,7 +130,7 @@ INS-000112,"Deslizador Argollita N°5/5,8",Cierres y Deslizadores,Deslizadores C
 INS-000111,Deslizador Asterisco N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,ASTERISCO5.8.webp,Niquel,369.6,27,SI,Unidad
 INS-000107,Deslizador Bolita N°3,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,192.04,43,SI,Unidad
 INS-000116,Deslizador Campanita YKK N°8 Metálico,Cierres y Deslizadores,Deslizadores Cierre Metálico,,,Cierre YKK Oro N8.webp,Oro,1323.47,20,SI,Unidad
-INS-000144,Deslizador Cierre Plástico N°8,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,585.49,50,SI,Unidad
+INS-000144,Deslizador Cierre Plástico N°8,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,deslizador campanita ykk 8.webp,Niquel,585.49,50,SI,Unidad
 INS-000119,Deslizador Común N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,COMUN5.8.jpg,niquel,97.7,476,SI,Unidad
 INS-000117,Deslizador Corazón N°6,Cierres y Deslizadores,Deslizadores Cierre Plástico,,,,Niquel,290.98,20,SI,Unidad
 INS-000029,Deslizador Diente de perro y aluminio N°5,Cierres y Deslizadores,Deslizadores Cierre Diente de Perro,,,,Niquel,150,20,SI,Unidad
