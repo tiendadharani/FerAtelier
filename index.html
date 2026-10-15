@@ -2295,7 +2295,7 @@ function mostrarCarrito() {
     lista.appendChild(li);
   });
 
-  document.getElementById("total").textContent = "$" + total.toFixed(2);
+  document.getElementById("total").textContent = "$" + formatearPrecio(total);
 
   actualizarBarraCarrito(total);
 }
@@ -2315,7 +2315,7 @@ function actualizarBarraCarrito(total) {
   }
 
   if (totalSpan) {
-    totalSpan.textContent = "$" + total.toFixed(2);
+    totalSpan.textContent = "$" + formatearPrecio(total);
   }
 
 const cantDesktop = document.getElementById("carrito-cantidad-desktop");
@@ -2326,7 +2326,7 @@ if (cantDesktop) {
 }
 
 if (totalDesktop) {
-  totalDesktop.textContent = "$" + total;
+  totalDesktop.textContent = "$" + formatearPrecio(total);
 }
 	
 }
