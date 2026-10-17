@@ -2734,26 +2734,16 @@ function restarProducto(i) {
 
   if (item.tipoVenta === "metro") {
 
+    // No bajar de 0,50 m
     if (item.cantidad > 0.50) {
-
       item.cantidad = Math.round((item.cantidad - 0.10) * 100) / 100;
-
-    } else {
-
-      carrito.splice(i, 1);
-
     }
 
   } else {
 
+    // No bajar de 1 unidad
     if (item.cantidad > 1) {
-
       item.cantidad--;
-
-    } else {
-
-      carrito.splice(i, 1);
-
     }
 
   }
