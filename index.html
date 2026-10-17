@@ -2275,16 +2275,16 @@ function mostrarCarrito() {
           </div>
 
           <div class="carrito-lateral-controles">
-            <button onclick="restarProducto(${index})">−</button>
-            <span>
-			  ${
-			    item.tipoVenta === "metro"
-			      ? item.cantidad.toFixed(2).replace(".", ",") + " m"
-			      : item.cantidad
-			  }
-			</span>
-            <button onclick="sumarProducto(${index})">+</button>
-          </div>
+			  <button onclick="event.stopPropagation(); restarProducto(${index})">−</button>
+			  <span>
+			    ${
+			      item.tipoVenta === "metro"
+			        ? item.cantidad.toFixed(2).replace(".", ",") + " m"
+			        : item.cantidad
+			    }
+			  </span>
+			  <button onclick="event.stopPropagation(); sumarProducto(${index})">+</button>
+			</div>
         </div>
 
         <div class="carrito-lateral-precio">
