@@ -3093,12 +3093,12 @@ function abrirCarritoCompleto() {
     </div>
   </div>
 
-  <div class="carrito-item-precio">
-    $${item.precio * item.cantidad}
-    <button onclick="eliminarProducto(${index})" class="eliminar">
-      ✕
-    </button>
-  </div>
+	<div class="carrito-item-precio">
+	  $${formatearPrecio(item.precio * item.cantidad)}
+	  <button onclick="eliminarProducto(${index})" class="eliminar">
+	    ✕
+	  </button>
+	</div>
 `;
 
 
