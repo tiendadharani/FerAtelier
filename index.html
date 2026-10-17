@@ -3114,8 +3114,9 @@ carrito.forEach(item => {
 });
 
 const totalSpan = document.getElementById("total-carrito-completo");
+
 if (totalSpan) {
-  totalSpan.textContent = "$" + totalGeneral;
+  totalSpan.textContent = "$" + formatearPrecio(totalGeneral);
 }
 
 }
