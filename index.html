@@ -2700,10 +2700,19 @@ conectarBuscadores(buscadorDesktop, buscadorMobile);
 conectarBuscadores(buscadorMobile, buscadorDesktop);
 
 function sumarProducto(i) {
+
   carrito[i].cantidad++;
+
   mostrarCarrito();
   guardarCarrito();
+
+  const carritoCompleto = document.getElementById("carrito-completo");
+
+  if (carritoCompleto && carritoCompleto.classList.contains("visible")) {
+    abrirCarritoCompleto();
+  }
 }
+
 
 function restarProducto(i) {
 
@@ -2715,6 +2724,12 @@ function restarProducto(i) {
 
   mostrarCarrito();
   guardarCarrito();
+
+  const carritoCompleto = document.getElementById("carrito-completo");
+
+  if (carritoCompleto && carritoCompleto.classList.contains("visible")) {
+    abrirCarritoCompleto();
+  }
 }
 
 function eliminarProducto(i, event) {
