@@ -2701,7 +2701,19 @@ conectarBuscadores(buscadorMobile, buscadorDesktop);
 
 function sumarProducto(i) {
 
-  carrito[i].cantidad++;
+  const item = carrito[i];
+
+  if (!item) return;
+
+  if (item.tipoVenta === "metro") {
+
+    item.cantidad = Math.round((item.cantidad + 0.10) * 100) / 100;
+
+  } else {
+
+    item.cantidad++;
+
+  }
 
   mostrarCarrito();
   guardarCarrito();
@@ -2716,10 +2728,34 @@ function sumarProducto(i) {
 
 function restarProducto(i) {
 
-  if (carrito[i].cantidad > 1) {
-    carrito[i].cantidad--;
+  const item = carrito[i];
+
+  if (!item) return;
+
+  if (item.tipoVenta === "metro") {
+
+    if (item.cantidad > 0.50) {
+
+      item.cantidad = Math.round((item.cantidad - 0.10) * 100) / 100;
+
+    } else {
+
+      carrito.splice(i, 1);
+
+    }
+
   } else {
-    carrito.splice(i, 1);
+
+    if (item.cantidad > 1) {
+
+      item.cantidad--;
+
+    } else {
+
+      carrito.splice(i, 1);
+
+    }
+
   }
 
   mostrarCarrito();
