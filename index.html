@@ -42,6 +42,33 @@
   display: block;
 }
 
+	  /* INDICADORES DEL SLIDER */
+
+.slider-indicadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.slider-indicadores button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #c8d4cd;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.slider-indicadores button.activo {
+  background: #5a8f7b;
+  transform: scale(1.2);
+}
+
+	  
 .slide img,
 .slide {
   object-fit: contain; /* 👈 evita recorte */
@@ -1924,14 +1951,14 @@ scroll-snap-align: start;
 <div class="categoria visible" id="inicio">
 
   <div class="slider">
-    <div class="slides">
-      <img src="imagenes/Banner1.png" class="slide active">
-      <img src="imagenes/Banner2.png" class="slide">
-      <img src="imagenes/Banner3.png" class="slide">
-      <img src="imagenes/Banner4.png" class="slide">
-	  <img src="imagenes/Banner5.png" class="slide">
-    </div>
+
+  <div class="slides">
+    <img src="imagenes/Banner1.png" class="slide active" alt="Bienvenidos a Fer Atelier">
   </div>
+
+  <div class="slider-indicadores"></div>
+
+</div>
 
 <div class="categorias-destacadas">
 
@@ -2780,28 +2807,75 @@ function eliminarProducto(i, event) {
   guardarCarrito();
 }
 
-  /* SLIDER AUTOMÁTICO */
+ /* SLIDER AUTOMÁTICO CON INDICADORES */
+
+const slides = Array.from(document.querySelectorAll(".slide"));
+const contenedorIndicadores = document.querySelector(".slider-indicadores");
 
 let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
+let intervaloSlider;
 
-function mostrarSlide() {
+function mostrarSlide(indice) {
 
-  slides.forEach(slide => {
-    slide.classList.remove("active");
+  if (slides.length === 0) return;
+
+  slideIndex = indice;
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === slideIndex);
   });
 
-  slides[slideIndex].classList.add("active");
+  const indicadores = contenedorIndicadores.querySelectorAll("button");
 
-  slideIndex++;
-
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
+  indicadores.forEach((boton, i) => {
+    boton.classList.toggle("activo", i === slideIndex);
+    boton.setAttribute("aria-pressed", i === slideIndex ? "true" : "false");
+  });
 }
 
-setInterval(mostrarSlide, 4000); // cambia cada 4 segundos
+function crearIndicadores() {
 
+  if (!contenedorIndicadores) return;
+
+  contenedorIndicadores.innerHTML = "";
+
+  slides.forEach((slide, i) => {
+
+    const boton = document.createElement("button");
+
+    boton.type = "button";
+    boton.setAttribute("aria-label", `Mostrar banner ${i + 1}`);
+
+    boton.addEventListener("click", () => {
+      mostrarSlide(i);
+      iniciarSlider();
+    });
+
+    contenedorIndicadores.appendChild(boton);
+
+  });
+
+  mostrarSlide(0);
+}
+
+function iniciarSlider() {
+
+  clearInterval(intervaloSlider);
+
+  if (slides.length <= 1) return;
+
+  intervaloSlider = setInterval(() => {
+
+    const siguiente = (slideIndex + 1) % slides.length;
+
+    mostrarSlide(siguiente);
+
+  }, 5000);
+
+}
+
+crearIndicadores();
+iniciarSlider();
 function toggleMenu() {
   const menu = document.getElementById("menu");
   const overlay = document.getElementById("overlay");
