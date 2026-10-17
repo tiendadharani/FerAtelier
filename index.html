@@ -2422,8 +2422,11 @@ function toggleProducto(el) {
 /* Abrir carrito */
 function toggleCarrito() {
 
-  document.querySelector(".carrito-panel")
-    .classList.toggle("abierto");
+  const panel = document.querySelector(".carrito-panel");
+
+  if (!panel) return;
+
+  panel.classList.toggle("abierto");
 }
 
 	// Cerrar carrito al hacer click fuera
