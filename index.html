@@ -2247,11 +2247,14 @@ function scrollCategorias(valor){
 /* Mostrar carrito */
 function mostrarCarrito() {
 
+  const panel = document.querySelector(".carrito-panel");
+  const carritoEstabaAbierto = panel?.classList.contains("abierto");
+
   const lista = document.getElementById("lista");
   lista.innerHTML = "";
 
   let total = 0;
-
+	
   carrito.forEach((item, index) => {
 
     const subtotal = item.precio * item.cantidad;
@@ -2298,6 +2301,10 @@ function mostrarCarrito() {
   document.getElementById("total").textContent = "$" + formatearPrecio(total);
 
   actualizarBarraCarrito(total);
+	
+  if (carritoEstabaAbierto) {
+    panel.classList.add("abierto");
+  }
 }
 
 
